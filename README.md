@@ -27,7 +27,7 @@
 1. Clone the repository
 
    ```
-   git clone https://github.com/evancolewright/moves-app
+   git clone https://github.com/evancolewright/moves
    ```
 
 2. Install dependencies
