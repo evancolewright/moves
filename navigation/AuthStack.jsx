@@ -8,9 +8,21 @@ const AuthStack = () => {
   const AuthStack = createStackNavigator();
   return (
     <AuthStack.Navigator>
-      <AuthStack.Screen name='SignIn' component={SignInScreen} options={{ headerShown: false }} />
-      <AuthStack.Screen name='Register' component={RegisterScreen} />
-      <AuthStack.Screen name='ForgotPassword' component={ForgotPasswordScreen} />
+      <AuthStack.Screen name='Sign In' component={SignInScreen} options={{ headerShown: false }} />
+      <AuthStack.Screen
+        name='Register'
+        component={RegisterScreen}
+        options={{
+          headerTintColor: '#393939',
+        }}
+      />
+      <AuthStack.Screen
+        name='Forgot Password'
+        component={ForgotPasswordScreen}
+        options={{
+          headerTintColor: '#393939',
+        }}
+      />
     </AuthStack.Navigator>
   );
 };
