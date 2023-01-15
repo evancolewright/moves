@@ -19,14 +19,18 @@ const SignInScreen = ({ navigation }) => {
   };
 
   const handleSignInError = (error) => {
-    // TODO: handle additional errors
     switch (error.code) {
       case 'auth/wrong-password':
+        Alert.alert('You have entered an invalid password.  Please try again.');
+        break;
       case 'auth/user-not-found':
-        Alert.alert('Wrong email and password combination.  Please try again.');
+        Alert.alert('A user with that email was not found. Please try again.');
+        break;
+      case 'auth/user-disabled':
+        Alert.alert('Your account has been disabled. Please contact support if this is an error.');
         break;
       default:
-        Alert.alert(`An unknown error occurred. Please contact the development team.  Error code: ${error.code}`);
+        Alert.alert(`An unknown error occurred. Error code: ${error.code}`);
     }
   };
   return (
