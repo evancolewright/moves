@@ -34,7 +34,7 @@ const AppStack = () => {
         }}
       />
       <BottomTab.Screen
-        name='Profile'
+        name='ProfileTab'
         component={ProfileNavigator}
         options={{
           headerShown: false,
